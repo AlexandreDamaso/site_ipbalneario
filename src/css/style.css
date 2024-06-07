@@ -1,0 +1,66 @@
+:root {
+   --color-white: rgb(255, 255, 255);
+   --color-black: rgb(0, 0, 0);
+   --color-green-base: rgb(0, 87, 16);
+   --color-green-dark: rgb(49, 88, 24);
+   --color-green-medium: rgb(102, 155, 73);
+   --color-green-light: rgb(172, 221, 147);
+   --color-gray-base: rgb(54, 54, 54);
+   --color-gray-dark: #717171;
+   --color-gray-medium: #9e9e9e;
+   --color-gray-light: #d1d1d1;
+   --color-gray-lightness: #e3e3e3;
+
+   --font-family: "Roboto", sans-serif;
+
+   --font-menu-size: 16px;
+   --font-menu-weight: 400;
+   --font-menu-transform: uppercase;
+
+   --font-banner-title-size: 40px;
+   --font-banner-title-weight: 700;
+
+   --font-banner-text-size: 18px;
+   --font-banner-text-weight: 400;
+
+   --font-p-title-size: 25px;
+   --font-p-title-weight: 400;
+
+   --font-p-text-size: 14px;
+   --font-p-text-weight: 300;
+
+   --font-button-size: 14px;
+   --font-button-weight: 400;
+}
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: var(--font-family);
+}
+body{
+   background: var(--color-green-base);
+   display: flex;
+   justify-content: center;
+}
+
+
+
+
+
+
+
+div {
+   background-color: aquamarine;
+   height: 120px;
+   width: 1200px;
+}
+h1 {
+   font-size: var(--font-p-title-size);
+   font-weight: var(--font-p-title-weight);
+}
+p {
+   font-size: var(--font-menu-size);
+   font-weight: var(--font-menu-weight);
+   text-transform: var(--font-menu-transform);
+}
