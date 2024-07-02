@@ -11,7 +11,8 @@
    --color-gray-light: #d1d1d1;
    --color-gray-lightness: #e3e3e3;
 
-   --font-family: "Roboto", sans-serif;
+   --font-family-roboto: "Roboto", sans-serif;
+   --font-family-lato: "Lato", sans-serif;
 
    --font-menu-size: 16px;
    --font-menu-weight: 400;
@@ -37,61 +38,95 @@
    padding: 0;
    margin: 0;
    box-sizing: border-box;
-   font-family: var(--font-family);
+   font-family: var(--font-family-lato);
 }
 
-/* body {
-   background: var(--color-gray-lightness);
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
-   justify-content: center;
-   flex: 1 1 100vw;
-   justify-content: center;
-} */
+.bg-green {
+   background: var(--color-green-dark);
+}
+
+.bg-white {
+   background: var(--color-white);
+}
+
 .body-container {
    width: 100vw;
-   background: var(--color-white);
 }
-header {
+
+.header {
    display: flex;
    align-items: center;
    justify-content: center;
    flex: 1 1 100vw;
-   background: var(--color-white);
    height: 130px;
 }
+
 .header-container {
-   background: var(--color-green-light);
    display: flex;
    align-items: center;
-   justify-content: space-around;
+   justify-content: space-between;
    flex: 1 1 100vw;
    max-width: 1400px;
+   height: 100%;
    padding: 0px 50px;
 }
-.logo > img {
-   height: 100px;
+
+.logo>img {
+   height: 110px;
    width: 100%;
 }
+
 nav {
+   font-family: var(--font-family-lato);
    display: flex;
 }
-main {
+
+.main {
    display: flex;
+   align-items: center;
+   justify-content: center;
    flex: 1 1 100vw;
    background: var(--color-gray-medium);
-   height: 500px; 
+   height: 500px;
    /* calc(100vh - 200px); */
 }
+
+.main-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex: 1 1 100vw;
+   max-width: 1400px;
+   height: 100%;
+   padding: 0px 50px;
+}
+
+.div {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex: 1 1 100vw;
+   height: 500px;
+   /* calc(100vh - 200px); */
+}
+
+.div-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex: 1 1 100vw;
+   max-width: 1400px;
+   height: 100%;
+   padding: 0px 50px;
+}
+
 aside {
    display: flex;
    flex: 1 1 100vw;
-   background: var(--color-white);
-   height: 500px; 
+   height: 500px;
 }
+
 footer {
    display: flex;
    flex: 1 1 100vw;
-   background: var(--color-green-base);
 }
