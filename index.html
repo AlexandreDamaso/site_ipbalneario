@@ -7,9 +7,12 @@
    <title>IP Balneário</title>
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+   <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet">
    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
@@ -17,28 +20,54 @@
    <div class="body-container bg-white">
       <header class="header">
          <div class="header-container">
-            <div class="logo">
-               <img src="./src/img/logo_ipbmp_green.png" alt="Logo IPBMP">
-            </div>
+            <div class="logo"><img src="./src/img/logo_p.png" alt="Logo IPBMP"></div>
             <nav class="nav">
                <ul class="nav-bar">
-                  <li class="nav-item"><a href="#">APRESENTACAO</a></li>
-                  <li class="nav-item"><a href="#">BOLETIM</a></li>
-                  <li class="nav-item"><a href="#">AGENDA</a></li>
-                  <li class="nav-item"><a href="#">FOTOS</a></li>
+                  <li class="nav-bar-item"><a href="#">APRESENTACAO</a></li>
+                  <li class="nav-bar-item"><a href="#">BOLETIM</a></li>
+                  <li class="nav-bar-item"><a href="#">AGENDA</a></li>
+                  <li class="nav-bar-item"><a href="#">FOTOS</a></li>
                </ul>
             </nav>
          </div>
       </header>
 
       <main class="main">
-         <div class="main-container">
-            <div class="logo">
-               <img src="./src/img/logo_ipbmp_green.png" alt="Logo IPBMP">
+         <section class="slider">
+            <div class="sliders">
+               <input type="radio" name="btn-radio" id="radio-1">
+               <input type="radio" name="btn-radio" id="radio-2">
+               <input type="radio" name="btn-radio" id="radio-3">
+
+               <div class="slide-img first">
+                  <img class="img-desktop" src="./src/img/slide_04d.jpg" alt="">
+                  <img class="img-mobile" src="./src/img/slide_01m.jpg" alt="">
+               </div>
+               <div class="slide-img">
+                  <img class="img-desktop" src="./src/img/slide_06d.jpg" alt="">
+                  <img class="img-mobile" src="./src/img/slide_02m.jpg" alt="">
+               </div>
+               <div class="slide-img">
+                  <img class="img-desktop" src="./src/img/slide_05d.jpg" alt="">
+                  <img class="img-mobile" src="./src/img/slide_03m.jpg" alt="">
+               </div>
+
+               <div class="nav-auto">
+                  <div class="nav-auto-btn-1"></div>
+                  <div class="nav-auto-btn-2"></div>
+                  <div class="nav-auto-btn-3"></div>
+               </div>
+
+               <div class="nav-manual">
+                  <label for="radio-1" class="nav-manual-btn"></label>
+                  <label for="radio-2" class="nav-manual-btn"></label>
+                  <label for="radio-3" class="nav-manual-btn"></label>
+               </div>
+
             </div>
-         </div>
+         </section>
       </main>
-      
+
       <div class="div bg-green">
          <div class="div-container">
             <div class="logo">
@@ -55,7 +84,18 @@
          </div>
       </div>
 
-      <footer class="footer bg-green">Rodapé</footer>
+      <footer class="footer bg-green">
+         <div class="footer-container">
+            <div>
+               ...
+            </div>
+            <div>
+               LOGO Igreja Presbiteriana Balneário Meia Ponte 
+            </div>
+         </div>
+      </footer>
+
+
       <!-- Define o rodapé para a página ou seção
             O <footer> pode conter:
             - Informações de autoria
@@ -67,6 +107,7 @@
          -->
 
    </div>
+   <script src="./src/js/script.js"></script>
 </body>
 
 </html>
