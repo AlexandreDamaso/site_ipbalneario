@@ -66,11 +66,9 @@
 
 .logo > img {
    height: 110px;
-   width: 100%;
 }
 
 nav {
-   /* font-family: var(--font-family-open); */
    display: flex;
    font-size: 24px;
 }
@@ -86,10 +84,23 @@ nav {
    padding: 10px 20px;
    color: var(--color-black);
    font-weight: 600;
+   position: relative;
 }
 
-.nav-bar-item > a:hover {
-   border-bottom: 7px solid var(--color-green-primary);
+.nav-bar-item > a::after {
+   content: " ";
+   width: 0%;
+   height: 4px;
+   background-color: var(--color-green-primary);
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   transition: 0.5s ease-in-out;
+}
+
+.nav-bar-item > a:hover::after {
+   width: 100%;
+   /* border-bottom: 7px solid var(--color-green-primary); */
 }
 
 .main {
