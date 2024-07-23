@@ -2,17 +2,14 @@
    --color-white: rgb(255, 255, 255);
    --color-black: rgb(0, 0, 0);
    --color-green-base: rgb(0, 87, 16);
-   --color-green-dark: rgb(49, 88, 24);
-   --color-green-medium: rgb(102, 155, 73);
-   --color-green-light: rgb(172, 221, 147);
+   --color-green-primary: rgb(0, 89, 52);
+   --color-green-secondary: rgb(9, 174, 105);
    --color-gray-base: rgb(54, 54, 54);
-   --color-gray-dark: #717171;
-   --color-gray-medium: #9e9e9e;
-   --color-gray-light: #d1d1d1;
-   --color-gray-lightness: #e3e3e3;
+   --color-gray-primary: #717171;
+   --color-gray-secondary: #9e9e9e;
 
-   --font-family-roboto: "Roboto", sans-serif;
-   --font-family-lato: "Lato", sans-serif;
+   --font-family-open: "Open Sans", sans-serif;
+   /* --font-family-open: "Lato", sans-serif; */
 
    --font-menu-size: 16px;
    --font-menu-weight: 400;
@@ -38,11 +35,11 @@
    padding: 0;
    margin: 0;
    box-sizing: border-box;
-   font-family: var(--font-family-lato);
+   font-family: var(--font-family-open);
 }
 
 .bg-green {
-   background: var(--color-green-dark);
+   background: var(--color-green-primary);
 }
 
 .bg-white {
@@ -73,7 +70,7 @@
 }
 
 nav {
-   font-family: var(--font-family-lato);
+   /* font-family: var(--font-family-open); */
    display: flex;
 }
 
@@ -91,7 +88,7 @@ nav {
 }
 
 .nav-bar-item > a:hover {
-   border-bottom: 7px solid var(--color-green-dark);
+   border-bottom: 7px solid var(--color-green-primary);
 }
 
 .main {
