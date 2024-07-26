@@ -1,18 +1,16 @@
-// let photosCount = 1;
-// let photosQtdImage = 3;
-
-// document.getElementById('photos-radio-1').checked = true;
-
-// setInterval(function() {
-//    photosNextImage();
-// }, 1000)
-
-// function photosNextImage() {
-//    photosCount++;
-
-//    if(photosCount > photosQtdImage) {
-//       photosCount = 1;
-//    }
-   
-//    document.getElementById('photos-radio-' + photosCount).checked = true;
-// }
+var swiper = new Swiper(".mySwiper", {
+   spaceBetween: 30,
+   effect: "fade",
+   navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+   },
+   pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+   },
+   autoplay: {
+      delay: 6000,
+      disableOnInteraction: false,
+    },
+});

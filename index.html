@@ -10,6 +10,7 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet">
+   <link rel="stylesheet" href="src/css/swiper-bundle.min.css">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
    <link rel="stylesheet" href="./src/css/style.css">
 </head>
@@ -70,47 +71,34 @@
          <div class="quem-somos-container">
             <h2 class="h2-bg-white">Quem Somos</h2>
             <div class="paragraph p-bg-white">
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta itaque molestias voluptatem sapiente fugiat, ducimus, ab ipsam voluptates nisi, culpa officia odit expedita sequi optio placeat quae repellat iure id?</p>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aliquam voluptatem, dolor unde libero amet eos harum odit accusantium perspiciatis sit dolorem quod explicabo laudantium, qui, labore incidunt eius velit.</p>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus animi, rem dolores dignissimos veniam velit inventore voluptates cum accusamus? Error, consectetur aperiam nemo similique dicta perferendis cupiditate impedit vero sit!</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta itaque molestias voluptatem sapiente
+                  fugiat, ducimus, ab ipsam voluptates nisi, culpa officia odit expedita sequi optio placeat quae
+                  repellat iure id?</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aliquam voluptatem, dolor unde libero
+                  amet eos harum odit accusantium perspiciatis sit dolorem quod explicabo laudantium, qui, labore
+                  incidunt eius velit.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus animi, rem dolores dignissimos
+                  veniam velit inventore voluptates cum accusamus? Error, consectetur aperiam nemo similique dicta
+                  perferendis cupiditate impedit vero sit!</p>
             </div>
          </div>
       </section>
 
-      <section class="photos">
-         <div class="photos-slider">
-            <div class="photos-sliders">
-               <input type="radio" name="btn-radio" id="photos-radio-1">
-               <input type="radio" name="btn-radio" id="photos-radio-2">
-               <input type="radio" name="btn-radio" id="photos-radio-3">
-
-               <div class="photos-slide-img photos-first">
-                  <img class="photos-img-desktop" src="./src/img/ipbmp-01.jpg" alt="">
-                  <!-- <img class="img-mobile" src="./src/img/slide_04m.jpg" alt=""> -->
-               </div>
-               <div class="photos-slide-img">
-                  <img class="photos-img-desktop" src="./src/img/ipbmp-02.jpg" alt="">
-                  <!-- <img class="img-mobile" src="./src/img/slide_05m.jpg" alt=""> -->
-               </div>
-               <div class="photos-slide-img">
-                  <img class="photos-img-desktop" src="./src/img/ipbmp-03.jpg" alt="">
-                  <!-- <img class="img-mobile" src="./src/img/slide_06m.jpg" alt=""> -->
-               </div>
-
-               <div class="photos-nav-auto">
-                  <div class="photos-nav-auto-btn-1"></div>
-                  <div class="photos-nav-auto-btn-2"></div>
-                  <div class="photos-nav-auto-btn-3"></div>
-               </div>
-
-               <div class="photos-nav-manual">
-                  <label for="photos-radio-1" class="photos-nav-manual-btn"></label>
-                  <label for="photos-radio-2" class="photos-nav-manual-btn"></label>
-                  <label for="photos-radio-3" class="photos-nav-manual-btn"></label>
-               </div>
-
+      <section class="swiper mySwiper">
+         <div class="swiper-wrapper">
+            <div class="swiper-slide">
+               <img src="src/img/ipbmp-01.jpg" />
+            </div>
+            <div class="swiper-slide">
+               <img src="src/img/ipbmp-02.jpg" />
+            </div>
+            <div class="swiper-slide">
+               <img src="src/img/ipbmp-03.jpg" />
             </div>
          </div>
+         <!-- <div class="swiper-button-next"></div>
+         <div class="swiper-button-prev"></div>
+         <div class="swiper-pagination"></div> -->
       </section>
 
       <div class="div bg-green">
@@ -161,6 +149,7 @@
          -->
 
    </div>
+   <script src="src/js/swiper-bundle.min.js"></script>
    <script src="./src/js/slider.js"></script>
    <script src="./src/js/photos.js"></script>
 </body>
