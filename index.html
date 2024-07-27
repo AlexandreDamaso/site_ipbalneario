@@ -22,16 +22,16 @@
             <div class="logo"><img src="./src/img/logo_texto_ipbmp_verde.png" alt="Logo IPBMP"></div>
             <nav class="nav">
                <ul class="nav-bar">
-                  <li class="nav-bar-item"><a href="#">APRESENTACAO</a></li>
-                  <li class="nav-bar-item"><a href="#">BOLETIM</a></li>
-                  <li class="nav-bar-item"><a href="#">AGENDA</a></li>
-                  <li class="nav-bar-item"><a href="#">FOTOS</a></li>
+                  <li class="nav-bar-item"><a href="#banner">INÍCIO</a></li>
+                  <!-- <li class="nav-bar-item"><a href="#about-us">QUEM SOMOS</a></li>
+                  <li class="nav-bar-item"><a href="#cults">PROGRAMAÇÃO</a></li> -->
+                  <li class="nav-bar-item"><a href="boletim.html" target="_blank">BOLETIM</a></li>
                </ul>
             </nav>
          </div>
       </header>
 
-      <main class="main">
+      <main class="main" id="banner">
          <div class="slider">
             <div class="sliders">
                <input type="radio" name="btn-radio" id="radio-1">
@@ -67,8 +67,8 @@
          </div>
       </main>
 
-      <section class="quem-somos bg-white">
-         <div class="quem-somos-container">
+      <section class="about-us bg-white" id="about-us">
+         <div class="about-us-container">
             <h2 class="h2-bg-white">Quem Somos</h2>
             <div class="paragraph p-bg-white">
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta itaque molestias voluptatem sapiente
@@ -101,15 +101,44 @@
          <div class="swiper-pagination"></div> -->
       </section>
 
-      <div class="div bg-green">
+      <section class="cults bg-green" id="cults">
+         <div class="cults-container">
+            <h2 class="h2-bg-green">Programação Semanal</h2>
+            <div class="cults-box cult-box-p-bg-white">
+               <div class="cult-day">
+                  <h3>Terça-feira</h3>
+                  <p>Visita Pastoral</p>
+               </div>
+               <div class="cult-day">
+                  <h3>Quarta-feiras</h3>
+                  <p><span>20h00</span> - Estudo Bíblico</p>
+               </div>
+               <div class="cult-day">
+                  <h3>Sexta-feiras</h3>
+                  <p><span>20h00</span> - Reunião de Oração</p>
+               </div>
+               <div class="cult-day">
+                  <h3>Sábado</h3>
+                  <p><span>19h30</span> - Reunião de Jovens e Adolescentes</p>
+               </div>
+               <div class="cult-day">
+                  <h3 class="h3-bg-white">Domingo</h3>
+                  <p><span>09h00</span> - Escola Bíblica Dominical</p>
+                  <p><span>19h00</span> - Culto de Louvor e Adoração</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- <div class="div bg-green">
          <div class="div-container">
             <div class="logo">
                <img src="./src/img/logo_ipbmp_green.png" alt="Logo IPBMP">
             </div>
          </div>
-      </div>
-
-      <div class="div bg-white">
+      </div> -->
+      
+      <div class="div bg-white" id="gazette">
          <div class="div-container">
             <div class="logo">
                <img src="./src/img/logo_ipbmp_green.png" alt="Logo IPBMP">
@@ -119,20 +148,20 @@
 
       <footer class="footer bg-green">
          <div class="footer-container">
-            <div class="footer-logo">
-               <img src="./src/img/logo_texto_ipbmp_branco.png" alt="Logo IPBMP">
+            <div class="footer-box">
+               <img class="footer-logo" src="./src/img/logo_texto_ipbmp_branco.png" alt="Logo IPBMP">
             </div>
-            <div class="footer-contato">
-               <h2>CONTATO</h2>
+            <div class="footer-box">
+               <h3 class="h3-bg-green">Contato</h3>
                <p><i class="bi bi-whatsapp"></i> WhatsApp </p>
-               <p><i class="bi bi-envelope"></i></p>
+               <p><i class="bi bi-envelope"></i> ip.balneario@gmail.com</p>
+               <p><i class="bi bi-telephone"></i> 62 9 9514-0035</p>
             </div>
-            <div class="footer-siganos">
-               <h2>Siga-nos</h2>
-               <p><i class="bi bi-instagram"></i></p>
-               <p><i class="bi bi-facebook"></i></p>
-               <p><i class="bi bi-youtube"></i></p>
-
+            <div class="footer-box">
+               <h3 class="h3-bg-green">Siga-nos</h3>
+               <p><i class="bi bi-instagram"></i> Instagram</p>
+               <p><i class="bi bi-facebook"></i> Facebook</p>
+               <p><i class="bi bi-youtube"></i> Youtube</p>
             </div>
          </div>
       </footer>
@@ -149,9 +178,9 @@
          -->
 
    </div>
-   <script src="src/js/swiper-bundle.min.js"></script>
-   <script src="./src/js/slider.js"></script>
-   <script src="./src/js/photos.js"></script>
+   <script src="src/js/swiper-bundle.min.js" defer></script>
+   <script src="./src/js/slider.js" defer></script>
+   <script src="./src/js/photos.js" defer></script>
 </body>
 
 </html>
